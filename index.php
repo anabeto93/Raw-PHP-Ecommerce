@@ -63,17 +63,23 @@
         </div>
     </div>
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis voluptatibus esse rem eaque labore, totam exercitationem? Soluta voluptate iusto esse quod debitis illo id ex perferendis, sed exercitationem vero.
-    Ullam totam inventore cum magni nobis deserunt asperiores sapiente tempore distinctio repellendus, voluptas quibusdam exercitationem. Ipsa excepturi tenetur illo vero voluptates minima, totam, cumque porro, voluptas cupiditate a dolorem molestiae?
-    Fuga laborum, ipsum recusandae quis consequuntur nobis assumenda amet labore a quod, quam nam saepe illo. Asperiores eligendi sed a fugiat perspiciatis assumenda itaque. Tenetur nobis ipsa recusandae incidunt architecto.
-    Eaque doloremque amet culpa earum praesentium? Esse accusamus et, molestiae officiis cum atque, inventore aliquam veniam nulla dicta deleniti incidunt minus distinctio fuga corporis temporibus, voluptatem aliquid alias possimus sequi.
-    A laudantium facere numquam libero quaerat ratione tempora explicabo! Facilis natus tempora, suscipit illo quos vero omnis, quidem assumenda atque et impedit? Soluta velit quas minima fuga aut officia ipsa.
+    
+    <div class="container-fluid">
+        <div class="row">
+        <!-- Left Sidebar -->
+        <div class="col-md-2">
+            Left Side Bar
+        </div>
 
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias maxime ab architecto iste in expedita, exercitationem modi, nostrum minima hic inventore consequatur, praesentium saepe qui perferendis quibusdam deserunt nisi ullam!
-    Consequatur ducimus velit facere, voluptatum necessitatibus porro hic praesentium aut accusantium quisquam possimus, corrupti debitis sed architecto eum animi iure soluta sit recusandae minus! Provident fugit enim ipsam explicabo sint.
-    Necessitatibus aperiam officia possimus delectus quis modi, temporibus ea qui, deleniti tempore provident eum pariatur quibusdam odit, dolores ut. Quaerat eveniet et excepturi reprehenderit maiores tempora id soluta assumenda placeat?
-    Recusandae voluptates, totam, et est enim sit necessitatibus voluptatum doloribus, reprehenderit beatae odio error magni dicta repellendus libero odit vel laudantium iste facilis? Provident ex accusantium quae eaque. Hic, qui.
-    Soluta perspiciatis, vitae autem eveniet ipsum tempora quisquam aliquam voluptatibus nobis molestias, impedit facilis? Dignissimos, facere. Ut dignissimos tempore, obcaecati veniam neque blanditiis, placeat doloribus veritatis provident, repudiandae consequuntur unde!
+        <!--main content-->
+        <div class="col-md-8">
+        Main
+        </div>
+
+        <!-- Right Sidebar-->
+        <div class="col-md-2">Right Sidebar</div>
+        </div>
+    </div>
 
     <script>
     $(document).ready(function() {
