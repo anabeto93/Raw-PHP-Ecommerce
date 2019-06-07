@@ -1,4 +1,7 @@
-<?php include "includes/head.php"?>
+<?php
+include "core/init.php";
+include "includes/head.php"
+?>
 <!-- Top Nav Bar -->
 <?php include "includes/navigation.php" ?>
 
