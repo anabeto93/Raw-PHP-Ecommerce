@@ -1,80 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Richard's Boutique</title>
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</head>
-<body>
+<?php include "includes/head.php"?>
 <!-- Top Nav Bar -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.php">Richard's Boutique</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li> -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Men
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Shirts</a>
-                    <a class="dropdown-item" href="#">Pants</a>
-                    <a class="dropdown-item" href="#">Shoes</a>
-                    <a class="dropdown-item" href="#">Accessories</a>
-                    <!-- <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a> -->
-                </div>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li> -->
-        </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
-    </div>
-</nav>
+<?php include "includes/navigation.php" ?>
 
 <!-- Header -->
-<div id="headerWrapper">
-    <div id="back-flower">
-    </div>
-    <div id="logotext">
-        <img src="images/headerlogo/text2.png" alt="">
-    </div>
-    <div id="fore-flower">
-        <img src="images/headerlogo/fore-flower2.png" alt="Foreground flower">
-    </div>
-</div>
-
-
-<div class="container-fluid">
-    <div class="row">
+<?php include "includes/headerfull.php" ?>
         <!-- Left Sidebar -->
-        <div class="col-md-2">
-            Left Side Bar
-        </div>
+        <?php include "includes/left_sidebar.php" ?>
 
         <!--main content-->
         <div class="col-md-8">
-            <h2 class="text-center">Feature Products</h2>
+            <h2 class="text-center">Featured Products</h2>
             <div class="row">
                 <div class="col-md-3">
                     <h4>Woman's Shirt</h4>
@@ -152,96 +87,13 @@
         </div>
 
         <!-- Right Sidebar-->
-        <div class="col-md-2">Right Sidebar</div>
-    </div>
+        <?php include "includes/right_sidebar.php" ?>
+    </div><!-- End of Row -->
 
-</div>
-
-<!-- Footer -->
-<footer class="text-center" id="footer">
-    &copy; Copyright 2016-2019 <a href="https://humvite.com">Humvite Tech Solutions</a>
-</footer>
+</div><!-- End of Container-Fluid -->
 
 <!--Details Modal-->
-<div class="modal fade details-1" id="details-1" tabindex="-1" role="dialog"
-     aria-labelledby="details-1Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title col-11 text-center" id="details-1Label">Levis Jeans</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+<?php include "includes/details_modal.php" ?>
 
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="center-block">
-                                <img src="images/products/men4.png" alt="Levis Jeans"
-                                     class="details img-responsive">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <h4>Details</h4>
-                            <p>These jeans are amazing!. </p>
-                            <hr>
-                            <p>Price: $34.99</p>
-                            <p>Brand: Levis</p>
-                            <form action="add_cart.php" method="POST">
-                                <div class="form-group">
-                                    <div class="col-xs-3">
-                                        <label for="quantity">Quantity:</label>
-                                        <input type="number" class="form-control"
-                                            id="quantity" name="quantity">
-
-                                    </div>
-                                    <p>Available: 3</p>
-                                </div>
-                                <div class="form-group">
-                                    <label for="size">Size:</label>
-                                    <select name="size" id="size" class="form-control">
-                                        <option value=""></option>
-                                        <option value="28">28</option>
-                                        <option value="32">32</option>
-                                        <option value="36">36</option>
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">
-                    <span class="fa fa-shopping-cart" aria-hidden="true"></span> Add to Cart
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(document).ready(function () {
-        console.log('Ready for some UX actions');
-
-
-    });
-
-    $(window).scroll(function () {
-        var vscroll = $(this).scrollTop();
-        //console.log(vscroll);
-
-        $('#logotext').css({
-            "transform": `translate(-50%, ${0.85 * vscroll}px)`
-        });
-
-        $('#fore-flower').css({
-            "transform": `translate(${vscroll / 5}px, -${vscroll / 12}px)`
-        })
-    });
-</script>
-</body>
-</html>
+<!-- Footer -->
+<?php include "includes/footer.php" ?>
