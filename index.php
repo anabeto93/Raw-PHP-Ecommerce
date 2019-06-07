@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -167,7 +168,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-center" id="details-1Label">Levis Jeans</h5>
+                <h5 class="modal-title col-11 text-center" id="details-1Label">Levis Jeans</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -188,14 +189,35 @@
                             <hr>
                             <p>Price: $34.99</p>
                             <p>Brand: Levis</p>
+                            <form action="add_cart.php" method="POST">
+                                <div class="form-group">
+                                    <div class="col-xs-3">
+                                        <label for="quantity">Quantity:</label>
+                                        <input type="number" class="form-control"
+                                            id="quantity" name="quantity">
 
+                                    </div>
+                                    <p>Available: 3</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="size">Size:</label>
+                                    <select name="size" id="size" class="form-control">
+                                        <option value=""></option>
+                                        <option value="28">28</option>
+                                        <option value="32">32</option>
+                                        <option value="36">36</option>
+                                    </select>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary"> <span class="fa fa-shopping-cart" aria-hidden="true"></span> Add to Cart</button>
+                <button type="submit" class="btn btn-primary">
+                    <span class="fa fa-shopping-cart" aria-hidden="true"></span> Add to Cart
+                </button>
             </div>
         </div>
     </div>
