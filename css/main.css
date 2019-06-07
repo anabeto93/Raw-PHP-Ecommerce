@@ -45,3 +45,8 @@ body {
 #fore-flower img {
     width: 100%;
 }
+
+.img-thumb {
+    width: auto;
+    height: 12.5rem;
+}
